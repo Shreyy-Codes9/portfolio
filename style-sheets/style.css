@@ -1,0 +1,177 @@
+/* navbar */
+#headerr .nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+#headerr .nav-link::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgb(238, 238, 36), rgba(3, 97, 20, 0.5));
+    transition: all 0.2s ease-in-out;
+}
+
+#headerr .nav-link:hover::before {
+    width: 100%;
+}
+
+#nav-1 {
+    box-shadow: 2px 3px 10px #0a3310;
+}
+
+
+
+
+/* con-1 about me */
+#con-1 {
+    height: 70vh;
+}
+
+.text {
+    height: 100%;
+    width: 60%;
+}
+
+.bkg-img {
+    height: 100%;
+    width: 40%;
+}
+
+.span-1 {
+    font-size: 7rem;
+    line-height: 8rem;
+}
+
+.span-2 {
+    font-size: 3rem;
+    line-height: 2.34rem
+}
+
+.span-3 {
+    line-height: 5.3rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.span-4 {
+    /* line-height:rem; */
+    font-size: larger;
+    font-weight: 600;
+}
+
+.img-con {
+    height: 100%;
+    width: 100%;
+    background-image: url(../media/pfp2.png);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+
+
+/* com-2 */
+#con-2 {
+    height: 80vh;
+}
+
+.abt-1 {
+    height: 100%;
+    width: 35%;
+    background-image: url(../media/pfp2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.span-5 {
+    font-size: 4rem;
+}
+
+.abt-2 {
+    height: 100%;
+    width: 65%;
+}
+
+.epc {
+    height: 100%;
+    width: 25%;
+}
+
+.span-7 {
+    font-size: 5.5rem;
+}
+.pbox{
+    height: 50%;
+    width: 50%;
+}
+
+.pb-1 {
+    width: 70%;
+}
+
+.pb-2 {
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* con-3 */
+#con-3 {
+    height: 90vh;
+}
+
+
+/* con-4 */
+#con-4 {
+    height: 80vh;
+    margin-top: 100px;
+}
+
+.span-8 {
+    font-size: 5rem;
+}
+.carousel-item>.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* con-5 */
+#con-5 {
+    height: 50vh;
+}
+.tb{
+    height: 100%;
+    width: 23%;
+}
+
+
+
+
+/* con-6 */
+#con-6 {
+    height: 60vh;
+}
+
+
+
+/* con-7 */
+#con-7 {
+    height: 50vh;
+}

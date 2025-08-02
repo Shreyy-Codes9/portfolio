@@ -1,118 +1,79 @@
 /* color palette */
 
-:root{
+:root {
+  /* HEX */
+  --lox-dark: #0a3310;
+  --lox-primary: #4b5736;
+  --lox-secondary: #B1AB86;
+  --lox-background: #FEFAE0;
 
-    /* hex */
-    --darkhex : #0C0F20 ;
-    --dark2hex : #111933 ;
-    --dark3hex : #152142 ;
-    --primaryhex : #1A2954 ;
-    --primary2hex : #1E3163 ;
-    --primary3hex : #273A73 ;
-    --secondaryhex : #48597C ;
-    --secondary2hex : #003F5C ;
-    --secondary3hex : #2F4B7C ;
-    --backgroundhex : #d7c6f8 ;
-    --background2hex : #ffdddd ;
-    --background3hex : #ffffff ;
-
-    --darkrgb : 12, 15, 32 ;
-    --dark2rgb : 17, 25, 51 ;
-    --dark3rgb : 21, 33, 66 ;
-    --primaryrgb : 26, 41, 84 ;
-    --primary2rgb : 30, 49, 99 ;
-    --primary3rgb : 39, 58, 115 ;
-    --secondaryrgb : 72, 89, 124 ;
-    --secondary2rgb : 0, 63, 92 ;
-    --secondary3rgb : 47, 75, 124 ;
-    --backgroundrgb : 215, 198, 248;
-    --background2rgb : 255, 221, 221 ;
-    --background3rgb : 255, 255, 255 ;
-    
+  /* RGB */
+  --lox-dark-rgb: 10, 64, 12;
+  --lox-primary-rgb: 129, 144, 103;
+  --lox-secondary-rgb: 177, 171, 134;
+  --lox-background-rgb: 254, 250, 224;
 }
 
-/* classes */
+/* Background Colors */
+.lox-bg-dark {
+  background-color: var(--lox-dark);
+}
 
-/* Background Colors */ 
-.lox-bg-dark            { background-color: #0C0F20; }
-.lox-bg-dark2           { background-color: #111933; }
-.lox-bg-dark3           { background-color: #152142; }
+.lox-bg-primary {
+  background-color: var(--lox-primary);
+}
 
-.lox-bg-primary         { background-color: #1A2954; }
-.lox-bg-primary2        { background-color: #1E3163; }
-.lox-bg-primary3        { background-color: #273A73; }
+.lox-bg-secondary {
+  background-color: var(--lox-secondary);
+}
 
-.lox-bg-secondary       { background-color: #48597C; }
-.lox-bg-secondary2      { background-color: #003F5C; }
-.lox-bg-secondary3      { background-color: #2F4B7C; }
-
-.lox-bg-light           { background-color: #d7c6f8; }
-.lox-bg-light2          { background-color: #ffdddd; }
-.lox-bg-light3          { background-color: #ffffff; }
+.lox-bg-light {
+  background-color: var(--lox-background);
+}
 
 /* Text Colors */
-.lox-text-dark          { color: #0C0F20; }
-.lox-text-dark2         { color: #111933; }
-.lox-text-dark3         { color: #152142; }
-
-.lox-text-primary       { color: #1A2954; }
-.lox-text-primary2      { color: #1E3163; }
-.lox-text-primary3      { color: #273A73; }
-
-.lox-text-secondary     { color: #48597C; }
-.lox-text-secondary2    { color: #003F5C; }
-.lox-text-secondary3    { color: #2F4B7C; }
-
-.lox-text-light         { color:      #ffffff; }
-.lox-text-light2        { color: #ffdddd; }
-.lox-text-light3        { color: #ffffff; }
-
-/* Button Colors */
-.lox-btn-primary {
-  background-color: #1A2954;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
+.lox-text-dark {
+  color: var(--lox-dark);
 }
 
-.lox-btn-primary:hover {
-  background-color: #1E3163;
+.lox-text-primary {
+  color: var(--lox-primary);
 }
 
-.lox-btn-secondary {
-  background-color: #48597C;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
+.lox-text-secondary {
+  color: var(--lox-secondary);
 }
 
-.lox-btn-secondary:hover {
-  background-color: #273A73;
+.lox-text-light {
+  color: var(--lox-background);
 }
 
-.lox-btn-light {
-  background-color: #ffffff;
-  color: #0C0F20;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
+/* Border Colors */
+.lox-border-dark {
+  border-color: var(--lox-dark) !important;
 }
 
-.lox-btn-light:hover {
-  background-color: #ffffff;
+.lox-border-primary {
+  border-color: var(--lox-primary) !important;
 }
+
+.lox-border-secondary {
+  border-color: var(--lox-secondary) !important;
+}
+
+.lox-border-light {
+  border-color: var(--lox-background) !important;
+}
+
 
 /* body edits */
-body{
-    height: 500vh;
-    background: rgba(var(--darkrgb), 1);
-    font-family: "Merriweather" !important;
+body {
+  height: 500vh;
+  background: rgba(var(--lox-background-rgb), .2);
+  font-family: "Merriweather" !important;
 
-  }
+}
 
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Fascinate+Inline&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
-

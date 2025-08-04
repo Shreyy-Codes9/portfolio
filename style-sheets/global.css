@@ -68,7 +68,6 @@
 
 /* body edits */
 body {
-  height: 500vh;
   background: rgba(var(--lox-background-rgb), .2);
   font-family: "Merriweather" !important;
 
